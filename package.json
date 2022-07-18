@@ -4,5 +4,8 @@
   "main": "index.js",
   "repository": "git@github.com:fumtas1k/typescript-for-javascript-developers.git",
   "author": "fumtas1k",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.7.4"
+  }
 }
