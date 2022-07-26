@@ -2,9 +2,9 @@ export {};
 
 class Person {
   public name: string;
-  // privateはclass外からもサブクラスでは呼び出せない
+  // privateはclass外からもサブクラスからも呼び出せない
   private age: number;
-  // protectedはclass外からは呼び出せないがサブクラスからも呼び出せる
+  // protectedはclass外からは呼び出せないがサブクラスからは呼び出せる
   protected nationality: string;
 
   // constructorの戻り値の型は記述しない
@@ -18,7 +18,7 @@ class Person {
     return `name: ${this.name}, age: ${this.age}`;
   }
 
-  // privateはclass内であれば、他のインスタンスも呼び出せる
+  // class内であれば、他のインスタンスのprivateメンバーも呼び出せる
   older(other: Person): boolean {
     return this.age < other.age;
   }
